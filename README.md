@@ -7,9 +7,9 @@ Opinionated utilities for starting and stopping __VR__ tooling for several __Vir
 
 __WARNING: May not work for your computer.__
 
-Quest in this case means: __Meta Quest 2__  
-Reverb in the case means: __HP Reverb G2__  
-Vive in this case means: __HTC Vive Pro 2__
+- __Quest__ in this case means: __Meta Quest 2__  
+- __Reverb__ in the case means: __HP Reverb G2__  
+- __Vive__ in this case means: __HTC Vive Pro 2__
 
 Getting a __VR__ game to run is a hassle just getting all the tooling to start, even more if you have several VR headsets fighting each other on the same PC. These utilities comprise of `cmd` files that execute command lines to start and stop drivers and tools to get one of the above __VR__ headsets running, as well as shutting down things that may get in the way of the __VR__ performance.
 
