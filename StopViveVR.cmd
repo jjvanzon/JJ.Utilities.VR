@@ -13,4 +13,4 @@ taskkill /im vivelink.exe
 taskkill /im ViveAgentService.exe
 taskkill /im ViveDashboard.exe
 
-REM timeout /t 3
+timeout /t 5

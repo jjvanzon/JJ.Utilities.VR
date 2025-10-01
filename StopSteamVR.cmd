@@ -15,4 +15,4 @@ taskkill /im steamtours.exe /f
 taskkill /im steam.exe /f
 taskkill /im steamwebhelper.exe /f
 
-REM timeout /t 3
+timeout /t 5

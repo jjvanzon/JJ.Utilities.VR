@@ -1,12 +1,12 @@
 @echo off
 cls
-call StartViveDriver
 call StopReverbDriver
 call StopQuestDriver
 call StopForVR
+call StopViveDriver
 call StopSteamVR
+call StopPimaxVR
 call StopViveVR
 call StopQuestVR
 call StopReverbVR
-call StopPimaxVR
-call StartViveVR
+call StartPimaxVR

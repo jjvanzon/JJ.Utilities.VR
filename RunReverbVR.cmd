@@ -8,4 +8,5 @@ call StopSteamVR
 call StopReverbVR
 call StopViveVR
 call StopQuestVR
+call StopPimaxVR
 call StartReverbVR

@@ -13,5 +13,9 @@ taskkill /im OculusDebugTool.exe /f
 taskkill /im OVRRedir.exe /f
 taskkill /im OVRServer_x64.exe /f
 taskkill /im OVRServiceLauncher.exe /f
+taskkill /im MQRDCrashpadHandler.exe /f
+taskkill /im MQRDCrashpadHandler.exe /f
+taskkill /im oculus-platform-runtime.exe /f
+taskkill /im RemoteDesktopCompanion.exe /f
 
-REM timeout /t 3
+timeout /t 5

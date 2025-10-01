@@ -1,0 +1,12 @@
+rem pnputil /enum-devices /instanceid "USB\VID_045E&PID_0659&MI_03\B&35F12978&0&0003" | findstr /I "HoloLens" && pnputil /disable-device "USB\VID_045E&PID_0659&MI_03\B&35F12978&0&0003"
+rem pnputil /enum-devices /deviceid "USB\VID_045E&PID_0659&REV_000B&MI_02"
+
+
+
+
+rem pnputil /enum-devices /instanceid "USB\VID_045E&PID_0659&MI_03\B&35F12978&0&0003" | findstr /I "HoloLens" && pnputil /enable-device "USB\VID_045E&PID_0659&MI_03\B&35F12978&0&0003"
+pnputil /enum-devices /deviceid "USB\VID_045E&PID_0659&REV_000B&MI_02" | findstr /I "HoloLens" && pnputil /enable-device /deviceid "USB\VID_045E&PID_0659&REV_000B&MI_02"
+pnputil /enum-devices /deviceid "USB\VID_045E&PID_0659&REV_000B&MI_03" | findstr /I "HoloLens" && pnputil /enable-device /deviceid "USB\VID_045E&PID_0659&REV_000B&MI_03"
+pnputil /enum-devices /deviceid "USB\VID_045E&PID_0659&REV_000B&MI_04" | findstr /I "HoloLens" && pnputil /enable-device /deviceid "USB\VID_045E&PID_0659&REV_000B&MI_04"
+
+rem pnputil /enum-devices /instanceid "USB\VID_0BB4&PID_030B&MI_00\A&2C3E2CC7&0&0000" | findstr /I "VIVE Pro Multimedia Audio" && pnputil /disable-device "USB\VID_0BB4&PID_030B&MI_00\A&2C3E2CC7&0&0000"

@@ -12,11 +12,11 @@ timeout /t 2
 start "" "C:\Program Files (x86)\Steam\steam.exe"
 echo(
 
-REM REM echo Start Quest Link
-REM REM echo ----------------
-REM REM timeout /t 2
-REM REM start "" "C:\Program Files\Oculus\Support\oculus-client\OculusClient.exe"
-REM REM echo(
+REM echo Start Quest Link
+REM echo ----------------
+REM timeout /t 2
+REM start "" "C:\Program Files\Oculus\Support\oculus-client\OculusClient.exe"
+REM echo(
 
 echo Start Oculus Tray Tool
 echo ----------------------
@@ -24,23 +24,17 @@ timeout /t 2
 start "" "C:\Program Files (x86)\Oculus Tray Tool\OculusTrayTool.exe"
 echo(
 
-REM REM echo Start Task Manager
-REM REM echo ------------------
-REM REM timeout /t 2
-REM REM start "" "C:\Windows\System32\Taskmgr.exe"
-REM REM echo(
+echo Start SteamVR
+echo -------------
+timeout /t 20
+start "" "C:\Program Files (x86)\Steam\steamapps\common\SteamVR\bin\win64\vrmonitor.exe"
+echo(
 
-REM REM echo Start SteamVR
-REM REM echo -------------
-REM REM timeout /t 20
-REM REM start "" "C:\Program Files (x86)\Steam\steamapps\common\SteamVR\bin\win64\vrmonitor.exe"
-REM REM echo(
-
-REM REM echo Start SteamVR Home
-REM REM echo ------------------
-REM REM timeout /t 20
-REM REM start "" "C:\Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environments\game\bin\win64\steamtours.exe" -vr -nowindow
-REM REM echo(
+REM echo Start SteamVR Home
+REM echo ------------------
+REM timeout /t 20
+REM start "" "C:\Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environments\game\bin\win64\steamtours.exe" -vr -nowindow
+REM echo(
 
 echo Start Oculus Debug Tool
 echo -----------------------
