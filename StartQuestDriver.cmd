@@ -6,10 +6,24 @@ echo START QUEST DRIVER
 echo ==================
 
 echo(
-echo Display
-echo ------
+echo Composite
+echo ---------
 echo(
-pnputil /enum-devices /instanceid "ROOT\DISPLAY\0000" | findstr /I "Meta Virtual Monitor" && pnputil /enable-device "ROOT\DISPLAY\0000"
+pnputil /enum-devices /deviceid "USB\VID_2833&PID_0186"
+pnputil /enable-device /deviceid "USB\VID_2833&PID_0186"
+
+rem echo(
+rem echo Display
+rem echo ------
+rem echo(
+rem pnputil /enum-devices /instanceid "ROOT\DISPLAY\0000" | findstr /I "Meta Virtual Monitor" && pnputil /enable-device "ROOT\DISPLAY\0000"
+
+echo(
+echo Display
+echo -------
+echo(
+rem pnputil /enum-devices /deviceid "Root\MetaVirtualScreenDriver"
+pnputil /enable-device /deviceid "Root\MetaVirtualScreenDriver"
 
 echo(
 echo Controller
@@ -21,7 +35,9 @@ echo(
 echo Audio
 echo -----
 echo(
-pnputil /enum-devices /instanceid "ROOT\MEDIA\0000" | findstr /I "Oculus Virtual Audio Device" && pnputil /enable-device "ROOT\MEDIA\0000"
+rem pnputil /enum-devices /instanceid "ROOT\MEDIA\0000" | findstr /I "Oculus Virtual Audio Device" && pnputil /enable-device "ROOT\MEDIA\0000"
+rem pnputil /enum-devices /deviceid "Root\oculusvad_OculusVad"
+pnputil /enable-device /deviceid "Root\oculusvad_OculusVad"
 pnputil /enable-device "SWD\MMDEVAPI\{0.0.0.00000000}.{FE52B52C-624B-4EB7-9720-FD9E07ADCE74}"
 
 echo(

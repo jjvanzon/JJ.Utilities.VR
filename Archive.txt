@@ -10,3 +10,6 @@ pnputil /enum-devices /deviceid "USB\VID_045E&PID_0659&REV_000B&MI_03" | findstr
 pnputil /enum-devices /deviceid "USB\VID_045E&PID_0659&REV_000B&MI_04" | findstr /I "HoloLens" && pnputil /enable-device /deviceid "USB\VID_045E&PID_0659&REV_000B&MI_04"
 
 rem pnputil /enum-devices /instanceid "USB\VID_0BB4&PID_030B&MI_00\A&2C3E2CC7&0&0000" | findstr /I "VIVE Pro Multimedia Audio" && pnputil /disable-device "USB\VID_0BB4&PID_030B&MI_00\A&2C3E2CC7&0&0000"
+
+REM pnputil /enum-devices /instanceid "USB\VID_0BB4&PID_0342\207A307A5959"
+REM pnputil /enable-device "USB\VID_0BB4&PID_0342\207A307A5959"

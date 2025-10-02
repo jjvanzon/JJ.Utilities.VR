@@ -10,7 +10,9 @@ echo Audio
 echo -----
 echo(
 pnputil /disable-device "SWD\MMDEVAPI\{0.0.0.00000000}.{FE52B52C-624B-4EB7-9720-FD9E07ADCE74}"
-pnputil /enum-devices /instanceid "ROOT\MEDIA\0000" | findstr /I "Oculus Virtual Audio Device" && pnputil /disable-device "ROOT\MEDIA\0000"
+rem pnputil /enum-devices /instanceid "ROOT\MEDIA\0000" | findstr /I "Oculus Virtual Audio Device" && pnputil /disable-device "ROOT\MEDIA\0000"
+rem pnputil /enum-devices /deviceid "Root\oculusvad_OculusVad"
+pnputil /disable-device /deviceid "Root\oculusvad_OculusVad"
 
 echo(
 echo Microphone
@@ -19,16 +21,23 @@ echo(
 pnputil /disable-device "SWD\MMDEVAPI\{0.0.1.00000000}.{8EC58D05-CE01-44CD-9DCF-6695EBDBE920}"
 
 echo(
-echo Display
-echo -------
-echo(
-pnputil /enum-devices /instanceid "ROOT\DISPLAY\0000" | findstr /I "Meta Virtual Monitor" && pnputil /disable-device "ROOT\DISPLAY\0000"
-
-echo(
 echo Controller
 echo ----------
 echo(
 pnputil /enum-devices /instanceid "ROOT\SYSTEM\0001" | findstr /I "Oculus Virtual Gamepad" && pnputil /disable-device "ROOT\SYSTEM\0001"
+
+rem echo(
+rem echo Display
+rem echo -------
+rem echo(
+rem pnputil /enum-devices /instanceid "ROOT\DISPLAY\0000" | findstr /I "Meta Virtual Monitor" && pnputil /disable-device "ROOT\DISPLAY\0000"
+
+echo(
+echo Display
+echo -------
+echo(
+rem pnputil /enum-devices /deviceid "Root\MetaVirtualScreenDriver"
+pnputil /disable-device /deviceid "Root\MetaVirtualScreenDriver"
 
 echo(
 echo Highwind (Nerd Stuff)
@@ -48,5 +57,12 @@ echo XRSP (Nerd Stuff)
 echo -----------------
 echo(
 pnputil /enum-devices /instanceid "USB\VID_2833&PID_0186&MI_00\9&2249EA78&1&0000" | findstr /I "Reality Labs Composite XRSP Interface" && pnputil /disable-device "USB\VID_2833&PID_0186&MI_00\9&2249EA78&1&0000"
+
+echo(
+echo Composite
+echo ---------
+echo(
+pnputil /enum-devices /deviceid "USB\VID_2833&PID_0186"
+pnputil /disable-device /deviceid "USB\VID_2833&PID_0186"
 
 timeout /t 5
