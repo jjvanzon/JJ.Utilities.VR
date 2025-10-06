@@ -21,5 +21,11 @@ pnputil /disable-device /deviceid "USB\VID_045E&PID_0659&REV_000B&MI_02"
 pnputil /enum-devices /deviceid "USB\VID_045E&PID_0659&REV_000B&MI_03" | findstr /I "HoloLens" && pnputil /disable-device /deviceid "USB\VID_045E&PID_0659&REV_000B&MI_03"
 pnputil /enum-devices /deviceid "USB\VID_045E&PID_0659&REV_000B&MI_04" | findstr /I "HoloLens" && pnputil /disable-device /deviceid "USB\VID_045E&PID_0659&REV_000B&MI_04"
 
+echo(
+echo HoloLens Sensors (Composite)
+echo(
+echo ----------------------------
+pnputil /enum-devices /deviceid "USB\VID_045E&PID_0659" | findstr /I "Composite" && pnputil /disable-device /deviceid "USB\VID_045E&PID_0659"
+
 timeout /t 5
 
