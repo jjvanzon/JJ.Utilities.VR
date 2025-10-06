@@ -78,6 +78,7 @@ rem pnputil /enum-devices   /deviceid "USB\VID_0BB4&PID_030C&MI_00"
 pnputil /disable-device /deviceid "USB\VID_0BB4&PID_030C&MI_00"
 rem timeout /t 3
 
+rem BUG: Infinite on/off upon boot
 rem echo(
 rem echo Camera (USB Composite)
 rem echo ----------------------

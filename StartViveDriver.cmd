@@ -68,6 +68,7 @@ echo -----------------
 echo(
 rem pnputil /enum-devices /deviceid "USB\VID_0BB4&PID_030B&MI_00" | findstr /I "VIVE Pro Multimedia Audio" && pnputil /enable-device /deviceid "USB\VID_0BB4&PID_030B&MI_00"
 
+rem BUG: Infinite on/off upon boot
 rem echo Camera (USB Composite)
 rem echo ----------------------
 rem echo(
