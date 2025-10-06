@@ -65,9 +65,16 @@ echo -----------------
 echo(
 pnputil /enum-devices /instanceid "USB\VID_2833&PID_0186&MI_00\9&2249EA78&1&0000" | findstr /I "Reality Labs Composite XRSP Interface" && pnputil /enable-device "USB\VID_2833&PID_0186&MI_00\9&2249EA78&1&0000"
 
+rem BUG: Infinite on/off upon boot
+rem echo(
+rem echo Boot-Up Disk (USB Storage)
+rem echo --------------------------
+rem echo(
+rem pnputil /enum-devices /deviceid "USB\VID_2833&PID_0083" | findstr /I "Storage" && pnputil /enable-device /deviceid "USB\VID_2833&PID_0083"
+
 echo(
-echo Boot-Up Disk
-echo ------------
+echo Boot-Up Disk (Linux File-Stor)
+echo ------------------------------
 echo(
 rem pnputil /enum-devices /deviceid "USBSTOR\DiskLinux___File-Stor_Gadget0419"
 pnputil /enable-device /deviceid "USBSTOR\DiskLinux___File-Stor_Gadget0419"
