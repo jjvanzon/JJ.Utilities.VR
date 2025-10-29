@@ -7,4 +7,4 @@ echo =======================
 
 net stop VirtualDesktop.Service.exe
 
-timeout /t 5
+rem timeout /t 1

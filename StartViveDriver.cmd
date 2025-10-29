@@ -82,4 +82,4 @@ echo(
 rem pnputil /enum-devices /deviceid "USB\VID_0BB4&PID_030C&MI_00"
 pnputil /enable-device /deviceid "USB\VID_0BB4&PID_030C&MI_00"
 
-timeout /t 5
+timeout /t 1

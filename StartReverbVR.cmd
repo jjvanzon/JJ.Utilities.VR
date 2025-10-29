@@ -22,12 +22,12 @@ REM echo(
 REM echo Start Mixed Reality for Steam
 REM echo -----------------------------
 REM timeout /t 20
-REM start "" "C:\Program Files (x86)\Steam\steamapps\common\MixedRealityVRDriver\bin\win64\OpenVRSettingsUX.exe" /dashboardmode
+REM start "" "D:\SteamLibrary\steamapps\common\MixedRealityVRDriver\bin\win64\OpenVRSettingsUX.exe" /dashboardmode
 
 echo Start VR Home
 echo -------------
 timeout /t 20
-start "" "C:\Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environments\game\bin\win64\steamtours.exe" -vr -nowindow
+start "" "D:\SteamLibrary\steamapps\common\SteamVR\tools\steamvr_environments\game\bin\win64\steamtours.exe" -vr -nowindow
 echo(
 
 echo Done.

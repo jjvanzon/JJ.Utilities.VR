@@ -26,13 +26,13 @@ echo(
 echo Start SteamVR
 echo -------------
 timeout /t 15
-start "" "C:\Program Files (x86)\Steam\steamapps\common\SteamVR\bin\win64\vrmonitor.exe"
+start "" "D:\SteamLibrary\steamapps\common\SteamVR\bin\win64\vrmonitor.exe"
 echo(
 
 echo Start SteamVR Home
 echo ------------------
 timeout /t 15
-start "" "C:\Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environments\game\bin\win64\steamtours.exe" -vr -REM nowindow
+start "" "D:\SteamLibrary\steamapps\common\SteamVR\tools\steamvr_environments\game\bin\win64\steamtours.exe" -vr -REM nowindow
 echo(
 
 echo Done.

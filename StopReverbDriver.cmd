@@ -27,5 +27,5 @@ echo(
 echo ----------------------------
 pnputil /enum-devices /deviceid "USB\VID_045E&PID_0659" | findstr /I "Composite" && pnputil /disable-device /deviceid "USB\VID_045E&PID_0659"
 
-timeout /t 5
+rem timeout /t 1
 

@@ -11,4 +11,4 @@ taskkill /im vrss_gaze_provider.exe /f
 taskkill /im PiServiceLauncher.exe /f
 net stop "Tobii VR4PIMAXP3B Platform Runtime"
 
-timeout /t 5
+rem timeout /t 1

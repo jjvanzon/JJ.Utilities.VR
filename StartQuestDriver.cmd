@@ -79,4 +79,4 @@ echo(
 rem pnputil /enum-devices /deviceid "USBSTOR\DiskLinux___File-Stor_Gadget0419"
 pnputil /enable-device /deviceid "USBSTOR\DiskLinux___File-Stor_Gadget0419"
 
-timeout /t 5
+timeout /t 1

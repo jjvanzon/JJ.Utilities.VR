@@ -17,4 +17,4 @@ echo ----------
 echo(
 pnputil /enum-devices /instanceid "ROOT\SYSTEM\0002" | findstr /I "Virtual Desktop Gamepad" && pnputil /disable-device "ROOT\SYSTEM\0002"
 
-timeout /t 5
+rem timeout /t 1

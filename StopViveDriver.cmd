@@ -86,4 +86,4 @@ rem echo(
 rem pnputil /enum-devices  /deviceid "USB\VID_0BB4&PID_030C"
 rem pnputil /disable-device /deviceid "USB\VID_0BB4&PID_030C"
 
-timeout /t 5
+rem timeout /t 1

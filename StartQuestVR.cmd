@@ -27,13 +27,13 @@ echo(
 echo Start SteamVR
 echo -------------
 timeout /t 20
-start "" "C:\Program Files (x86)\Steam\steamapps\common\SteamVR\bin\win64\vrmonitor.exe"
+start "" "D:\SteamLibrary\steamapps\common\SteamVR\bin\win64\vrmonitor.exe"
 echo(
 
 REM echo Start SteamVR Home
 REM echo ------------------
 REM timeout /t 20
-REM start "" "C:\Program Files (x86)\Steam\steamapps\common\SteamVR\tools\steamvr_environments\game\bin\win64\steamtours.exe" -vr -nowindow
+REM start "" "D:\SteamLibrary\steamapps\common\SteamVR\tools\steamvr_environments\game\bin\win64\steamtours.exe" -vr -nowindow
 REM echo(
 
 echo Start Oculus Debug Tool

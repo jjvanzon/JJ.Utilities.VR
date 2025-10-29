@@ -21,5 +21,4 @@ pnputil /enable-device /deviceid "USB\VID_045E&PID_0659&REV_000B&MI_02"
 pnputil /enum-devices /deviceid "USB\VID_045E&PID_0659&REV_000B&MI_03" | findstr /I "HoloLens" && pnputil /enable-device /deviceid "USB\VID_045E&PID_0659&REV_000B&MI_03"
 pnputil /enum-devices /deviceid "USB\VID_045E&PID_0659&REV_000B&MI_04" | findstr /I "HoloLens" && pnputil /enable-device /deviceid "USB\VID_045E&PID_0659&REV_000B&MI_04"
 
-
-timeout /t 5
+timeout /t 1

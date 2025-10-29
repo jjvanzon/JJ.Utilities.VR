@@ -18,4 +18,4 @@ taskkill /im MQRDCrashpadHandler.exe /f
 taskkill /im oculus-platform-runtime.exe /f
 taskkill /im RemoteDesktopCompanion.exe /f
 
-timeout /t 5
+rem timeout /t 1

@@ -15,4 +15,4 @@ taskkill /im Passthrough.exe /f
 taskkill /im SpeechRuntime.exe /f
 net stop SharedRealitySvc
 
-timeout /t 5
+rem timeout /t 1

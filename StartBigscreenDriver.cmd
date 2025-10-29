@@ -11,4 +11,4 @@ echo ----------
 echo(
 pnputil /enum-devices /instanceid "ROOT\SYSTEM\0003" | findstr /I "Bigscreen Gamepad" && pnputil /enable-device "ROOT\SYSTEM\0003"
 
-timeout /t 5
+timeout /t 1

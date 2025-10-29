@@ -16,14 +16,6 @@ taskkill /im crashpad_handler.exe
 taskkill /im WhatsApp.exe
 
 REM echo(
-REM echo Optional
-REM echo --------
-REM timeout /t 3
-REM net stop EpsonScanSvc
-REM taskkill /im EEventManager.exe
-REM taskkill /im EPPCCMON.EXE
-
-REM echo(
 REM echo Questionnable
 REM echo -------------
 REM timeout /t 3
