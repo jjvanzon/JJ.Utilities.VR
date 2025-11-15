@@ -28,6 +28,7 @@ taskkill /im CrossDeviceResume.exe /f
 taskkill /im DTShellHlp.exe /f
 taskkill /im EEventManager.exe /f
 taskkill /im EPPCCMON.EXE /f
+taskkill /im EPSDNMON.EXE
 taskkill /im QuickControls.exe /f
 taskkill /im SystemSettings.exe /f
 taskkill /im UserOOBEBroker.exe /f
