@@ -22,4 +22,4 @@ REM timeout /t 3
 REM taskkill /im OfficeClickToRun.exe /f
 
 echo Done.
-timeout /t 5
+rem timeout /t 1

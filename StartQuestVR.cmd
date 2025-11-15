@@ -6,6 +6,10 @@ echo START QUEST VR
 echo ==============
 echo(
 
+echo Start Service
+echo -------------
+net start OVRLibraryService
+
 echo Start Steam
 echo -----------
 timeout /t 2
