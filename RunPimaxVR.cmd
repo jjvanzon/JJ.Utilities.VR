@@ -2,7 +2,6 @@
 cls
 call StopReverbDriver
 call StopQuestDriver
-call StopForVR
 call StopViveDriver
 call StopSteamVR
 call StopPimaxVR
