@@ -6,6 +6,9 @@ echo ====================
 echo(
 
 net stop W3SVC
+rem Application Host Helper Service:
+rem Provides administrative services for IIS, for example configuration history and Application Pool account mapping. If this service is stopped, configuration history and locking down files or directories with Application Pool specific Access Control Entries will not work.
+net stop AppHostSvc
 net stop MSSQLSERVER
 net stop SQLTELEMETRY
 net stop JetBrainsEtwHost.16
